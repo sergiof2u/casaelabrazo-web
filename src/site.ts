@@ -25,7 +25,7 @@ export const whatsappUrl = `https://wa.me/${site.whatsapp}`;
 // Menú principal. Primero lo que decide la reserva (la casa, las tarifas),
 // después el resto.
 export const nav = [
-  { href: '/la-casa/', label: 'La casa' },
+  { href: '/la-casa/', label: 'La cabaña' },
   { href: '/fotos/', label: 'Fotos' },
   { href: '/la-experiencia/', label: 'La experiencia' },
   { href: '/tarifas/', label: 'Tarifas' },
