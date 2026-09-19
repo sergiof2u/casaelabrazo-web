@@ -1,16 +1,21 @@
 ---
 title: La experiencia
 entrada: La estadía puede incluir taller, clase o masaje, según lo que quieras.
-descripcion: Talleres de joyería, yoga y masaje durante la estadía en Casa El Abrazo.
+descripcion: Yoga, talleres de joyería y masaje durante la estadía en Casa El Abrazo.
 imagen: /fotos/ventanal.jpg
 ---
 
-La cabaña queda cerca del taller de joyería y del estudio de yoga. Varias veces hemos tenido
+La cabaña queda cerca del estudio de yoga y del taller de joyería. Varias veces hemos tenido
 huéspedes que aprovechan el fin de semana para aprender algo con las manos.
 
-## Taller de joyería
+## Yoga y meditación
 
-![Una clase en el taller: tres personas trabajando en la mesa mientras la tallerista acompaña](/fotos/experiencia/taller-joyeria.jpg)
+![Dos personas en la postura del árbol durante una clase](/fotos/experiencia/yoga.jpg)
+
+Clases en el estudio, a unos minutos de la cabaña. Se puede entrar a las clases que ya están programadas o pedir
+una sesión durante la estadía.
+
+## Taller de joyería
 
 Una jornada en el taller, en el banco de trabajo, para conocer el oficio y salir con una pieza propia. Se coordina
 con anticipación y se dicta en el taller de la casa.
@@ -19,13 +24,6 @@ con anticipación y se dicta en el taller de la casa.
   <figure><img src="/fotos/experiencia/forjando.jpg" alt="Forjando una pulsera a martillo sobre el yunque" loading="lazy" /><figcaption>Forjar a martillo para darle la forma.</figcaption></figure>
   <figure><img src="/fotos/experiencia/puliendo.jpg" alt="Puliendo la pulsera en el banco de trabajo" loading="lazy" /><figcaption>Pulir hasta quitar las marcas del trabajo.</figcaption></figure>
 </div>
-
-## Yoga y meditación
-
-![Dos personas en la postura del árbol durante una clase](/fotos/experiencia/yoga.jpg)
-
-Clases en el estudio, a unos minutos de la cabaña. Se puede entrar a las clases que ya están programadas o pedir
-una sesión durante la estadía.
 
 ## Masaje de relajación
 
