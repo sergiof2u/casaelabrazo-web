@@ -6,7 +6,7 @@ export const tarifas = {
   // Noche de fin de semana: viernes, sábado o domingo.
   finDeSemana: 350000,
   // Promoción: dos noches o más, por noche.
-  promocionDosNoches: 190000,
+  promocionDosNoches: 290000,
   // Lunes a jueves: 10 % de descuento sobre la tarifa de una noche.
   entreSemana: 315000,
 } as const;
