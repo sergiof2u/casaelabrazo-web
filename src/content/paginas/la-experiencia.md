@@ -15,6 +15,11 @@ huéspedes que aprovechan el fin de semana para aprender algo con las manos.
 Una jornada en el taller, en el banco de trabajo, para conocer el oficio y salir con una pieza propia. Se coordina
 con anticipación y se dicta en el taller de la casa.
 
+<div class="galeria">
+  <figure><img src="/fotos/experiencia/forjando.jpg" alt="Forjando una pulsera a martillo sobre el yunque" loading="lazy" /><figcaption>Forjar a martillo para darle la forma.</figcaption></figure>
+  <figure><img src="/fotos/experiencia/puliendo.jpg" alt="Puliendo la pulsera en el banco de trabajo" loading="lazy" /><figcaption>Pulir hasta quitar las marcas del trabajo.</figcaption></figure>
+</div>
+
 ## Yoga y meditación
 
 ![Dos personas en la postura del árbol durante una clase](/fotos/experiencia/yoga.jpg)
