@@ -4,67 +4,86 @@ import { site, whatsappUrl, capacidad } from '../site';
 ---
 
 <Base title="Reservar" description="Cómo reservar Casa El Abrazo: por WhatsApp, sin plataformas.">
-  <section class="section">
+  <section class="encabezado-pagina">
     <div class="container">
-      <article class="article">
-        <h1>Reservar</h1>
+      <p class="etiqueta">Reservar</p>
+      <h1>Directo, sin intermediarios</h1>
+      <p class="entrada">
+        Escríbenos por WhatsApp con las fechas y el número de personas. La casa es para {capacidad}.
+      </p>
+    </div>
+  </section>
 
-        <p>
-          La reserva se hace por WhatsApp, hablando directamente con nosotros. No usamos plataformas de
-          intermediación: lo que acuerdas aquí es lo que pagas.
-        </p>
-
-        <p>
-          Escríbenos a <a href={whatsappUrl} rel="noopener">{site.whatsappVisible}</a> con las fechas y el número de
-          personas. La casa es para {capacidad}.
-        </p>
-
-        <h2>Deja los datos y seguimos en WhatsApp</h2>
-
-        <form class="formulario" id="form-reserva" data-whatsapp={site.whatsapp}>
-          <div class="campo">
-            <label for="nombre">Nombre</label>
-            <input id="nombre" name="nombre" type="text" autocomplete="name" required />
-          </div>
-          <div class="campo">
-            <label for="entrada">Fecha de entrada</label>
-            <input id="entrada" name="entrada" type="date" required />
-          </div>
-          <div class="campo">
-            <label for="salida">Fecha de salida</label>
-            <input id="salida" name="salida" type="date" required />
-          </div>
-          <div class="campo">
-            <label for="personas">Personas</label>
-            <input id="personas" name="personas" type="text" inputmode="numeric" placeholder="2 adultos, 1 niño" required />
-          </div>
-          <div class="campo">
-            <label for="nota">Algo que debamos saber</label>
-            <textarea id="nota" name="nota"></textarea>
-          </div>
-          <button class="btn btn-principal" type="submit">Abrir WhatsApp con estos datos</button>
-          <p class="formulario-nota">
-            Este formulario no guarda nada ni envía nada por su cuenta: arma el mensaje y abre tu WhatsApp con él
-            escrito, para que lo revises y lo mandes tú.
+  <section class="seccion seccion--blanca" style="padding-top: 1rem">
+    <div class="container">
+      <div class="dos-columnas" style="align-items: start">
+        <div>
+          <h2>Deja los datos y seguimos en WhatsApp</h2>
+          <p>
+            El formulario no manda nada a ningún servidor: arma el mensaje con tus datos y abre tu WhatsApp para
+            enviarlo. Nada queda guardado aquí.
           </p>
-        </form>
-      </article>
+
+          <form class="formulario" id="form-reserva" data-whatsapp={site.whatsapp}>
+            <div class="campo">
+              <label for="nombre">Nombre</label>
+              <input id="nombre" name="nombre" type="text" autocomplete="name" required />
+            </div>
+            <div class="campo">
+              <label for="personas">Personas</label>
+              <input id="personas" name="personas" type="number" min="1" max="3" value="2" required />
+            </div>
+            <div class="campo">
+              <label for="entrada">Entrada</label>
+              <input id="entrada" name="entrada" type="date" required />
+            </div>
+            <div class="campo">
+              <label for="salida">Salida</label>
+              <input id="salida" name="salida" type="date" required />
+            </div>
+            <div class="campo campo--ancho">
+              <label for="nota">Nota</label>
+              <textarea id="nota" name="nota" rows="3" placeholder="Un niño, una mascota, algo que debamos saber"></textarea>
+            </div>
+            <p class="nota-formulario">Al enviar se abre WhatsApp con el mensaje escrito. Tú decides si lo mandas.</p>
+            <div class="campo campo--ancho">
+              <button class="btn btn-principal" type="submit" style="border: none; cursor: pointer">
+                Abrir WhatsApp con los datos
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div>
+          <h2>También puedes escribir directo</h2>
+          <p>
+            WhatsApp <a href={whatsappUrl} rel="noopener">{site.whatsappVisible}</a><br />
+            Instagram <a href={`https://www.instagram.com/${site.instagram}/`} rel="noopener">@{site.instagram}</a>
+          </p>
+          <p class="pie-foto">
+            Te contestamos lo antes posible. Si quieres ver disponibilidad y tarifas antes de escribir, están en
+            <a href="/tarifas/"> Tarifas</a>.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
   <script>
     const formulario = document.getElementById('form-reserva') as HTMLFormElement | null;
 
-    formulario?.addEventListener('submit', (evento: SubmitEvent) => {
+    formulario?.addEventListener('submit', (evento) => {
       evento.preventDefault();
       const datos = new FormData(formulario);
+
       const lineas = [
         'Hola, quiero reservar Casa El Abrazo.',
-        `Nombre: ${datos.get('nombre') ?? ''}`,
-        `Entrada: ${datos.get('entrada') ?? ''}`,
-        `Salida: ${datos.get('salida') ?? ''}`,
-        `Personas: ${datos.get('personas') ?? ''}`,
+        `Nombre: ${datos.get('nombre')}`,
+        `Entrada: ${datos.get('entrada')}`,
+        `Salida: ${datos.get('salida')}`,
+        `Personas: ${datos.get('personas')}`,
       ];
+
       const nota = String(datos.get('nota') ?? '').trim();
       if (nota) lineas.push(`Nota: ${nota}`);
 

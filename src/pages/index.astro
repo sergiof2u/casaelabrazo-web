@@ -4,74 +4,204 @@ import { site, whatsappUrl, capacidad } from '../site';
 import { tarifas, dosNoches, peso } from '../precios';
 ---
 
-<Base>
-  <section class="section hero">
-    <div class="container">
-      <p class="etiqueta">Cabaña campestre · {site.lugar}</p>
-      <div class="hero-texto">
+<Base image="/fotos/portada.jpg">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="etiqueta">Cabaña campestre · {site.lugar}</p>
         <h1>Casa El Abrazo</h1>
-        <p class="hero-titular">
-          Una cabaña de estructura metálica en la sabana, hecha por su dueño, para un fin de semana sin afán.
-        </p>
+        <p class="entrada">Un fin de semana en la montaña, en una casa que construyó su dueño.</p>
         <p>
-          La construyó Sergio, orfebre, con la misma mano con que hace las piezas: la estructura se soldó tramo por
-          tramo y la madera y el jardín se fueron haciendo alrededor. Es para {capacidad}.
+          Estructura metálica soldada pieza por pieza, madera, jardín y vista. Es para {capacidad}. La reserva es
+          directa: escribes, te contestamos.
         </p>
-        <div class="hero-acciones">
+        <div class="acciones">
           <a class="btn btn-principal" href={whatsappUrl} rel="noopener">Reservar por WhatsApp</a>
-          <a class="btn btn-secundario" href="/la-casa/">Ver la casa</a>
+          <a class="btn btn-suave" href="/la-casa/">Ver la casa</a>
         </div>
       </div>
+      <figure class="hero-foto">
+        <img
+          src="/fotos/portada.jpg"
+          width="828"
+          height="1100"
+          alt="La cabaña con su terraza de madera y la baranda calada, entre árboles"
+        />
+      </figure>
     </div>
   </section>
 
-  <section class="section section--blanco">
+  <section class="franja">
     <div class="container">
-      <div class="article">
-        <h2>La casa</h2>
+      <dl class="franja-grid">
+        <div>
+          <dt>Cuándo</dt>
+          <dd>Viernes, sábado y domingo</dd>
+        </div>
+        <div>
+          <dt>Para quién</dt>
+          <dd>Una pareja con un niño</dd>
+        </div>
+        <div>
+          <dt>Dónde</dt>
+          <dd>{site.lugar}</dd>
+        </div>
+        <div>
+          <dt>Reserva</dt>
+          <dd>Directa, sin plataformas</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="seccion seccion--blanca">
+    <div class="container dos-columnas">
+      <div>
+        <p class="etiqueta">La casa</p>
+        <h2>Una sola cabaña, con el campo alrededor</h2>
         <p>
-          Una sola cabaña, con su jardín y su vista a la montaña. No hay vecinos pegados ni pasillos compartidos:
-          quien llega, llega a la casa entera.
+          Terraza de madera con baranda calada en acero, ventanales grandes a la montaña, jardín alrededor y una
+          escalera que baja al prado. Adentro, la cama frente al ventanal, la sala con estufa de leña y la mesa para
+          quedarse.
         </p>
-        <p><a href="/la-casa/">Ver cómo es por dentro y por fuera</a></p>
+        <p><a href="/la-casa/">Conocer la casa</a></p>
+      </div>
+      <figure class="columna-foto">
+        <img
+          src="/fotos/la-casa.jpg"
+          width="828"
+          height="1100"
+          loading="lazy"
+          alt="La cabaña vista desde el jardín, con la escalera de madera y las plantas"
+        />
+        <figcaption class="pie-foto">La cabaña, desde el jardín.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="seccion seccion--rosa">
+    <div class="container">
+      <p class="etiqueta">Por dentro</p>
+      <h2>El ventanal y la montaña</h2>
+      <div class="galeria" style="margin-top: 2rem">
+        <figure>
+          <img
+            src="/fotos/ventanal.jpg"
+            width="602"
+            height="800"
+            loading="lazy"
+            alt="La baranda calada y la montaña, vistas desde adentro de la cabaña"
+          />
+          <figcaption>La montaña, desde la sala.</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="/fotos/sala.jpg"
+            width="602"
+            height="800"
+            loading="lazy"
+            alt="La sala, con la estufa de leña y la mesa de centro"
+          />
+          <figcaption>La sala, con la estufa de leña.</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="/fotos/habitacion.jpg"
+            width="677"
+            height="900"
+            loading="lazy"
+            alt="La cama frente al ventanal, con la montaña al fondo"
+          />
+          <figcaption>La cama, frente al ventanal.</figcaption>
+        </figure>
+      </div>
+      <p style="margin-top: 1.5rem"><a href="/fotos/">Ver todas las fotos</a></p>
+    </div>
+  </section>
+
+  <section class="seccion seccion--blanca">
+    <div class="container dos-columnas dos-columnas--invertida">
+      <figure class="columna-foto">
+        <img
+          src="/fotos/el-oficio.jpg"
+          width="748"
+          height="1000"
+          loading="lazy"
+          alt="Sergio soldando la estructura metálica de la cabaña"
+        />
+        <figcaption class="pie-foto">La estructura, soldada pieza por pieza.</figcaption>
+      </figure>
+      <div>
+        <p class="etiqueta">El oficio</p>
+        <h2>La construyó un orfebre</h2>
+        <p>
+          Sergio es orfebre y escultor. Levantó la cabaña en estructura metálica con la misma mano con la que hace las
+          piezas: soldadura fina, medidas al milímetro y una baranda calada que se lee como un encaje.
+        </p>
+        <p>En Subachoque hay varios alquileres de fin de semana. Esta casa la levantó quien la habita, y eso se ve en cada detalle.</p>
       </div>
     </div>
   </section>
 
-  <section class="section section--rosa">
+  <section class="seccion">
     <div class="container">
-      <div class="article">
-        <h2>La experiencia</h2>
-        <p>
-          A la estadía se le puede sumar un taller de joyería o una clase de yoga con nosotros, y un masaje de
-          relajación durante el fin de semana. Lo que se hace en el taller de al lado también está disponible aquí.
-        </p>
-        <p><a href="/la-experiencia/">Ver talleres, yoga y masaje</a></p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <h2>Tarifas</h2>
+      <p class="etiqueta">La experiencia</p>
+      <h2>Lo que puede pasar durante la estadía</h2>
       <div class="tarjetas">
         <div class="tarjeta">
-          <p class="tarjeta-titulo">Una noche</p>
-          <p class="tarjeta-precio">{peso(tarifas.finDeSemana)}</p>
-          <p class="tarjeta-nota">Viernes, sábado o domingo.</p>
-        </div>
-        <div class="tarjeta tarjeta--destacada">
-          <p class="tarjeta-titulo">Promoción desde dos noches</p>
-          <p class="tarjeta-precio">{peso(tarifas.promocionDosNoches)}</p>
-          <p class="tarjeta-nota">Por noche. Dos noches: {peso(dosNoches)}.</p>
+          <h3>Taller de joyería</h3>
+          <p class="detalle">Una jornada en el taller, con las manos en el banco, para salir con una pieza propia.</p>
         </div>
         <div class="tarjeta">
-          <p class="tarjeta-titulo">Entre semana</p>
-          <p class="tarjeta-precio">{peso(tarifas.entreSemana)}</p>
-          <p class="tarjeta-nota">Lunes a jueves, por noche.</p>
+          <h3>Yoga y meditación</h3>
+          <p class="detalle">Clases en el estudio, a unos minutos de la cabaña.</p>
+        </div>
+        <div class="tarjeta">
+          <h3>Masaje de relajación</h3>
+          <p class="detalle">Ritmo lento, toque consciente, descanso profundo. Disponible durante la estadía.</p>
         </div>
       </div>
-      <p style="margin-top:1.5rem"><a href="/tarifas/">Ver las condiciones y reservar</a></p>
+      <p style="margin-top: 1.5rem"><a href="/la-experiencia/">Ver la experiencia</a></p>
+    </div>
+  </section>
+
+  <section class="seccion seccion--blanca">
+    <div class="container">
+      <p class="etiqueta">Tarifas</p>
+      <h2>Noches y precios</h2>
+      <div class="tarjetas">
+        <div class="tarjeta">
+          <h3>Una noche</h3>
+          <p class="precio">{peso(tarifas.finDeSemana)}</p>
+          <p class="detalle">Viernes, sábado o domingo. Es la tarifa de una noche sola.</p>
+        </div>
+        <div class="tarjeta tarjeta--destacada">
+          <span class="insignia">Promoción</span>
+          <h3>Dos noches o más</h3>
+          <p class="precio">{peso(tarifas.promocionDosNoches)}</p>
+          <p class="detalle">Por noche. Dos noches quedan en {peso(dosNoches)}.</p>
+        </div>
+        <div class="tarjeta">
+          <h3>Entre semana</h3>
+          <p class="precio">{peso(tarifas.entreSemana)}</p>
+          <p class="detalle">Lunes a jueves, con el 10% de descuento.</p>
+        </div>
+      </div>
+      <p style="margin-top: 1.5rem"><a href="/tarifas/">Ver las condiciones</a></p>
+    </div>
+  </section>
+
+  <section class="seccion seccion--rosa">
+    <div class="container" style="text-align: center; max-width: 660px">
+      <h2>Reserva directa</h2>
+      <p>
+        Escríbenos por WhatsApp con las fechas y te confirmamos disponibilidad. También puedes llenar el formulario y
+        se abre el mensaje con los datos puestos. Sin plataformas de intermediación.
+      </p>
+      <div class="acciones" style="justify-content: center">
+        <a class="btn btn-principal" href={whatsappUrl} rel="noopener">Escribir por WhatsApp</a>
+        <a class="btn btn-suave" href="/reservar/">Formulario de reserva</a>
+      </div>
     </div>
   </section>
 </Base>

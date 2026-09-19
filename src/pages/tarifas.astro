@@ -4,53 +4,48 @@ import { whatsappUrl } from '../site';
 import { tarifas, dosNoches, peso } from '../precios';
 ---
 
-<Base title="Tarifas" description="Tarifas de Casa El Abrazo y cómo reservar.">
-  <section class="section">
+<Base title="Tarifas" description="Tarifas de Casa El Abrazo: la noche de fin de semana, la promoción de dos noches o más y el descuento de entre semana.">
+  <section class="encabezado-pagina">
     <div class="container">
-      <article class="article">
-        <h1>Tarifas</h1>
+      <p class="etiqueta">Tarifas</p>
+      <h1>Noches y precios</h1>
+      <p class="entrada">
+        Los precios están a la vista. Se reserva por WhatsApp, sin plataformas de intermediación.
+      </p>
+    </div>
+  </section>
 
-        <p>
-          La reserva es directa, sin plataformas de intermediación. Se confirma por WhatsApp con el abono de la
-          primera noche.
-        </p>
+  <section class="seccion seccion--blanca" style="padding-top: 1rem">
+    <div class="container">
+      <div class="tarjetas">
+        <div class="tarjeta">
+          <h3>Una noche</h3>
+          <p class="precio">{peso(tarifas.finDeSemana)}</p>
+          <p class="detalle">Viernes, sábado o domingo. Es la tarifa de una noche sola.</p>
+        </div>
+        <div class="tarjeta tarjeta--destacada">
+          <span class="insignia">Promoción</span>
+          <h3>Dos noches o más</h3>
+          <p class="precio">{peso(tarifas.promocionDosNoches)}</p>
+          <p class="detalle">Por noche. Dos noches quedan en {peso(dosNoches)}.</p>
+        </div>
+        <div class="tarjeta">
+          <h3>Entre semana</h3>
+          <p class="precio">{peso(tarifas.entreSemana)}</p>
+          <p class="detalle">Lunes a jueves, con el 10% de descuento sobre la tarifa de una noche.</p>
+        </div>
+      </div>
 
-        <table class="meta-table">
-          <tbody>
-            <tr>
-              <th>Una noche de fin de semana</th>
-              <td>
-                {peso(tarifas.finDeSemana)}<br />
-                Viernes, sábado o domingo.
-              </td>
-            </tr>
-            <tr>
-              <th>Promoción desde dos noches</th>
-              <td>
-                {peso(tarifas.promocionDosNoches)} por noche<br />
-                Dos noches: {peso(dosNoches)}. La promoción aplica a partir de la segunda noche.
-              </td>
-            </tr>
-            <tr>
-              <th>Entre semana</th>
-              <td>
-                {peso(tarifas.entreSemana)} por noche<br />
-                Lunes a jueves, con el 10 % de descuento sobre la tarifa de una noche.
-              </td>
-            </tr>
-            <tr>
-              <th>Capacidad</th>
-              <td>Una pareja con un niño.</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <p>
-          <a class="btn btn-principal" href={whatsappUrl} rel="noopener">Preguntar disponibilidad por WhatsApp</a>
-        </p>
-
-        <p><a href="/reservar/">Ver cómo se reserva</a></p>
-      </article>
+      <div class="prose" style="margin-top: 3rem">
+        <h2>Lo que hay que saber</h2>
+        <ul>
+          <li>La promoción se aplica a partir de dos noches, y es la tarifa por noche.</li>
+          <li>La noche del domingo casi no se pide; si la quieres, escríbenos.</li>
+          <li>La casa es para una pareja con un niño.</li>
+          <li>La reserva se confirma por WhatsApp. Te enviamos la ubicación exacta y las indicaciones.</li>
+        </ul>
+        <p><a class="btn btn-principal" href={whatsappUrl} rel="noopener">Reservar por WhatsApp</a></p>
+      </div>
     </div>
   </section>
 </Base>

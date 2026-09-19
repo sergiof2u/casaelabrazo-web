@@ -1,34 +1,33 @@
 ---
 title: La casa
+entrada: Una sola cabaña, en su terreno, con el campo alrededor.
 descripcion: Casa El Abrazo, la cabaña de estructura metálica construida por su dueño en Subachoque.
+imagen: /fotos/la-casa.jpg
 ---
 
-Una sola cabaña, en su propio terreno, con jardín y vista a la montaña. La construyó Sergio, orfebre, en estructura
-metálica: la soldó tramo por tramo, y ese trabajo se ve en las proporciones, en la terraza y en los detalles de
-madera que se hicieron alrededor.
+![La cabaña vista desde el jardín, con la escalera de madera y las plantas](/fotos/la-casa.jpg)
 
-Eso es lo que hace que esta casa no se parezca a otras de la sabana. La misma mano que hace las piezas de joyería
-levantó la estructura donde vas a dormir.
+Es una cabaña de estructura metálica, levantada por Sergio pieza por pieza. Alrededor hay jardín, árboles y el
+prado que baja con la montaña al frente.
 
 ## Los espacios
 
-- Una habitación con cama doble y ventanal a la montaña.
-- Zona de estar con cocina, para quedarse adentro cuando el clima no acompaña.
-- Terraza cubierta, con la baranda calada y las escaleras de madera.
-- Jardín, con el aire frío de la sabana y el silencio de no tener vecinos pegados.
+**La terraza.** Madera, techo translúcido y la baranda calada que Sergio cortó en acero. Es donde se pasa el rato
+largo: el café de la mañana y la conversación de la noche.
 
-La casa es para una pareja con un niño. La capacidad es esa, y se respeta: no se alquila para grupos ni para
-fiestas.
+**La sala.** Ventanales grandes a la montaña, una mesa de centro y la estufa de leña para las noches frías.
 
-## Cómo se vive
+**La habitación.** La cama está frente al ventanal; se amanece con la montaña y las nubes.
 
-Se llega, se deja el carro y se para. Se toma café en la terraza, se lee, se duerme sin ruido de ciudad. Quien
-quiera hacer algo con las manos puede sumar un taller de joyería o una clase de yoga durante la estadía, y hay
-masaje de relajación disponible en la casa.
+![El ventanal y la montaña desde la sala](/fotos/ventanal.jpg)
 
-> "Llegas a un lugar y te llevas una experiencia."
+## Para quién es
 
-<small>Las fotos de esta página están pendientes de montar. Mientras tanto, la casa se ve en
-[@casaelabrazo](https://www.instagram.com/casaelabrazo/).</small>
+Para una pareja con un niño. No es una casa de grupos ni de fiestas: es un lugar para descansar.
 
-<!-- BORRADOR: texto propuesto por el agente, sin corregir por Sergio. -->
+## Cómo se construyó
+
+Sergio es orfebre y escultor, y la cabaña salió de su taller, no de un catálogo. La estructura se soldó aquí
+mismo, y la escalera y la terraza se hicieron a la medida del terreno.
+
+![Sergio soldando la estructura metálica](/fotos/el-oficio.jpg)

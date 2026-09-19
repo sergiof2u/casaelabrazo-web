@@ -15,12 +15,15 @@ const { Content } = await render(pagina);
 ---
 
 <Base title={pagina.data.title} description={pagina.data.descripcion} image={pagina.data.imagen}>
-  <section class="section">
+  <section class="encabezado-pagina">
+    <div class="container">
+      <h1>{pagina.data.title}</h1>
+      {pagina.data.entrada && <p class="entrada">{pagina.data.entrada}</p>}
+    </div>
+  </section>
+  <section class="seccion" style="padding-top: 0">
     <div class="container">
       <article class="prose article">
-        <header>
-          <h1>{pagina.data.title}</h1>
-        </header>
         <Content />
       </article>
     </div>

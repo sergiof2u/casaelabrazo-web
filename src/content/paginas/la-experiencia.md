@@ -1,28 +1,27 @@
 ---
 title: La experiencia
+entrada: La estadía puede incluir taller, clase o masaje, según lo que quieras.
 descripcion: Talleres de joyería, yoga y masaje durante la estadía en Casa El Abrazo.
+imagen: /fotos/ventanal.jpg
 ---
 
-La cabaña está al lado del taller donde trabajamos el oficio. Quien se aloja puede sumarle a la estadía lo que se
-hace ahí, y ya lo hemos hecho varias veces con huéspedes.
+La cabaña queda cerca del taller donde se trabaja el oficio y del estudio de yoga. Varias veces hemos tenido
+huéspedes que aprovechan el fin de semana para aprender algo con las manos.
 
 ## Taller de joyería
 
-Se trabaja con las manos y se sale con una pieza propia. Es el oficio de Sergio, el mismo con el que levantó la
-estructura de la casa.
+Una jornada en el taller, en el banco de trabajo, para conocer el oficio y salir con una pieza propia. Se coordina
+con anticipación y se dicta en el taller de la casa.
 
 ## Yoga y meditación
 
-Una práctica tranquila, en la casa o en el estudio, según el clima y el día.
+Clases en el estudio, a unos minutos de la cabaña. Se puede entrar a las clases que ya están programadas o pedir
+una sesión durante la estadía.
 
 ## Masaje de relajación
 
-Disponible durante la estadía, en la cabaña. Ritmo lento, toque consciente, descanso profundo.
+Disponible durante la estadía: ritmo lento, toque consciente, descanso profundo. Se agenda al reservar.
 
 ## Subachoque
 
-Estamos en el campo, en Subachoque, Cundinamarca. Te compartimos la ubicación exacta y las indicaciones cuando se
-confirma la reserva.
-
-<!-- BORRADOR: texto propuesto por el agente, sin corregir por Sergio.
-     Falta concretar duración, precio y con cuánta anticipación se piden el taller, el yoga y el masaje. -->
+Estamos en el campo, con la montaña al frente. El pueblo está cerca, y el silencio es lo que se viene a buscar.

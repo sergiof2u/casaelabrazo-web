@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-import { site, nav, navPie, whatsappUrl } from '../site';
+import { site, nav, navPie, whatsappUrl, capacidad } from '../site';
 
 interface Props {
   title?: string;
@@ -18,6 +18,8 @@ const currentPath = Astro.url.pathname;
 <html lang="es">
   <head>
     <meta charset="utf-8" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="apple-touch-icon" href="/favicon-180.png" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{fullTitle}</title>
@@ -42,10 +44,8 @@ const currentPath = Astro.url.pathname;
           <span class="brand-name">{site.nombre}</span>
           <span class="brand-tag">{site.etiqueta}</span>
         </a>
-        <nav class="nav">
-          <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
-            Menú
-          </button>
+        <nav>
+          <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false">Menú</button>
           <ul class="nav-list" id="nav-list">
             {nav.map((item) => (
               <li>
@@ -56,7 +56,7 @@ const currentPath = Astro.url.pathname;
             ))}
           </ul>
         </nav>
-        <a class="btn btn-principal" href={whatsappUrl} rel="noopener">Reservar</a>
+        <a class="btn btn-principal header-cta" href={whatsappUrl} rel="noopener">Reservar</a>
       </div>
     </header>
 
@@ -69,11 +69,12 @@ const currentPath = Astro.url.pathname;
         <div class="footer-grid">
           <div>
             <p class="footer-brand">{site.nombre}</p>
-            <p class="footer-dato">{site.lugar}</p>
+            <p>{site.lugar}</p>
+            <p class="footer-nota">Para {capacidad}.</p>
           </div>
           <div>
             <p class="footer-title">Reservas</p>
-            <p class="footer-dato">
+            <p>
               <a href={whatsappUrl} rel="noopener">WhatsApp {site.whatsappVisible}</a><br />
               <a href={`https://www.instagram.com/${site.instagram}/`} rel="noopener">@{site.instagram}</a>
             </p>
@@ -81,15 +82,14 @@ const currentPath = Astro.url.pathname;
           </div>
           <div>
             <p class="footer-title">Sitio</p>
-            <ul class="footer-lista">
+            <ul>
               {navPie.map((item) => (
-                <li>
-                  <a href={item.href}>{item.label}</a>
-                </li>
+                <li><a href={item.href}>{item.label}</a></li>
               ))}
             </ul>
           </div>
         </div>
+        <p class="footer-final">Casa El Abrazo · Subachoque, Cundinamarca</p>
       </div>
     </footer>
 

@@ -1,12 +1,11 @@
 ---
 title: Cómo llegar
+entrada: Subachoque, Cundinamarca, en el campo.
 descripcion: Cómo llegar a Casa El Abrazo, en Subachoque, Cundinamarca.
+imagen: /fotos/la-casa.jpg
 ---
 
 Estamos en Subachoque, Cundinamarca, en el campo, con la montaña al frente.
 
-La ubicación exacta y las indicaciones del último tramo se comparten al confirmar la reserva, porque el camino
-final cambia según la ruta y conviene llegar de día.
-
-<!-- BORRADOR: texto propuesto por el agente, sin corregir por Sergio.
-     Falta la distancia y el tiempo desde Bogotá, si hay transporte público y si el acceso sirve para carro bajo. -->
+Al confirmar la reserva te enviamos la ubicación exacta y las indicaciones para llegar. Si vienes sin carro,
+cuéntanos y te ayudamos a organizar el transporte desde Bogotá.
