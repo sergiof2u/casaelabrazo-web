@@ -1,0 +1,77 @@
+---
+import Base from '../layouts/Base.astro';
+import { site, whatsappUrl, capacidad } from '../site';
+import { tarifas, dosNoches, peso } from '../precios';
+---
+
+<Base>
+  <section class="section hero">
+    <div class="container">
+      <p class="etiqueta">Cabaña campestre · {site.lugar}</p>
+      <div class="hero-texto">
+        <h1>Casa El Abrazo</h1>
+        <p class="hero-titular">
+          Una cabaña de estructura metálica en la sabana, hecha por su dueño, para un fin de semana sin afán.
+        </p>
+        <p>
+          La construyó Sergio, orfebre, con la misma mano con que hace las piezas: la estructura se soldó tramo por
+          tramo y la madera y el jardín se fueron haciendo alrededor. Es para {capacidad}.
+        </p>
+        <div class="hero-acciones">
+          <a class="btn btn-principal" href={whatsappUrl} rel="noopener">Reservar por WhatsApp</a>
+          <a class="btn btn-secundario" href="/la-casa/">Ver la casa</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--blanco">
+    <div class="container">
+      <div class="article">
+        <h2>La casa</h2>
+        <p>
+          Una sola cabaña, con su jardín y su vista a la montaña. No hay vecinos pegados ni pasillos compartidos:
+          quien llega, llega a la casa entera.
+        </p>
+        <p><a href="/la-casa/">Ver cómo es por dentro y por fuera</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--rosa">
+    <div class="container">
+      <div class="article">
+        <h2>La experiencia</h2>
+        <p>
+          A la estadía se le puede sumar un taller de joyería o una clase de yoga con nosotros, y un masaje de
+          relajación durante el fin de semana. Lo que se hace en el taller de al lado también está disponible aquí.
+        </p>
+        <p><a href="/la-experiencia/">Ver talleres, yoga y masaje</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Tarifas</h2>
+      <div class="tarjetas">
+        <div class="tarjeta">
+          <p class="tarjeta-titulo">Una noche</p>
+          <p class="tarjeta-precio">{peso(tarifas.finDeSemana)}</p>
+          <p class="tarjeta-nota">Viernes, sábado o domingo.</p>
+        </div>
+        <div class="tarjeta tarjeta--destacada">
+          <p class="tarjeta-titulo">Promoción desde dos noches</p>
+          <p class="tarjeta-precio">{peso(tarifas.promocionDosNoches)}</p>
+          <p class="tarjeta-nota">Por noche. Dos noches: {peso(dosNoches)}.</p>
+        </div>
+        <div class="tarjeta">
+          <p class="tarjeta-titulo">Entre semana</p>
+          <p class="tarjeta-precio">{peso(tarifas.entreSemana)}</p>
+          <p class="tarjeta-nota">Lunes a jueves, por noche.</p>
+        </div>
+      </div>
+      <p style="margin-top:1.5rem"><a href="/tarifas/">Ver las condiciones y reservar</a></p>
+    </div>
+  </section>
+</Base>

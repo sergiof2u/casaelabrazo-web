@@ -1,0 +1,454 @@
+/* Casa El Abrazo — hoja de estilo única.
+   Paleta tomada de los volantes de la marca: crema, rosa empolvado y terracota. */
+
+:root {
+  --crema: #faf1e6;
+  --rosa: #f3dcd2;
+  --terracota: #b8542f;
+  --rojo: #a04028;
+  --tinta: #2b2722;
+  --tinta-suave: #6b625a;
+  --linea: #e3d5c6;
+  --blanco: #fffdfa;
+  --ancho: 1080px;
+  --columna: 820px;
+  --serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --sans: 'Jost', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--crema);
+  color: var(--tinta);
+  font-family: var(--sans);
+  font-weight: 300;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--serif);
+  font-weight: 500;
+  line-height: 1.15;
+  margin: 0 0 0.6em;
+}
+
+h1 {
+  font-size: clamp(2.1rem, 5vw, 3.3rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+p {
+  margin: 0 0 1.1em;
+}
+
+a {
+  color: var(--terracota);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--ancho);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.section {
+  padding: 3.5rem 0;
+}
+
+.section--rosa {
+  background: var(--rosa);
+}
+
+.section--blanco {
+  background: var(--blanco);
+}
+
+.section--ajustada {
+  padding-top: 2rem;
+}
+
+.article {
+  max-width: var(--columna);
+  margin: 0 auto;
+}
+
+.etiqueta {
+  font-size: 0.75rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--tinta-suave);
+  margin-bottom: 0.8rem;
+}
+
+/* Encabezado */
+
+.site-header {
+  background: var(--blanco);
+  border-bottom: 1px solid var(--linea);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+  position: relative;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  margin-right: auto;
+}
+
+.brand-name {
+  font-family: var(--serif);
+  font-size: 1.45rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+
+.brand-tag {
+  font-size: 0.68rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--tinta-suave);
+}
+
+.nav-list {
+  display: flex;
+  gap: 1.4rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.95rem;
+}
+
+.nav-list a {
+  color: var(--tinta);
+  text-decoration: none;
+}
+
+.nav-list a:hover {
+  color: var(--terracota);
+}
+
+.nav-list a[aria-current='page'] {
+  color: var(--terracota);
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.62rem 1.3rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+}
+
+.btn-principal {
+  background: var(--terracota);
+  color: #fff;
+  white-space: nowrap;
+}
+
+.btn-principal:hover {
+  background: var(--rojo);
+}
+
+.btn-secundario {
+  border: 1px solid var(--terracota);
+  color: var(--terracota);
+}
+
+@media (max-width: 880px) {
+  .nav-toggle {
+    display: block;
+    background: none;
+    border: 1px solid var(--linea);
+    border-radius: 999px;
+    padding: 0.4rem 0.9rem;
+    font-family: inherit;
+    font-size: 0.85rem;
+    color: inherit;
+  }
+
+  .nav-list {
+    display: none;
+    position: absolute;
+    left: 1.25rem;
+    right: 1.25rem;
+    top: 100%;
+    flex-direction: column;
+    gap: 0.8rem;
+    background: var(--blanco);
+    border: 1px solid var(--linea);
+    border-radius: 0.6rem;
+    padding: 1.1rem 1.25rem;
+    box-shadow: 0 8px 24px rgba(43, 39, 34, 0.08);
+  }
+
+  .nav-list.is-open {
+    display: flex;
+  }
+}
+
+/* Portada */
+
+.hero {
+  padding: 3rem 0 2.5rem;
+}
+
+.hero-texto {
+  max-width: 44rem;
+}
+
+.hero-titular {
+  font-size: clamp(1.5rem, 3.4vw, 2.3rem);
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+}
+
+.hero-acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.6rem;
+}
+
+/* Tarjetas de tarifas */
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.tarjeta {
+  background: var(--blanco);
+  border: 1px solid var(--linea);
+  border-radius: 0.8rem;
+  padding: 1.5rem;
+}
+
+.tarjeta--destacada {
+  border-color: var(--terracota);
+}
+
+.tarjeta-titulo {
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--tinta-suave);
+  margin-bottom: 0.4rem;
+}
+
+.tarjeta-precio {
+  font-family: var(--serif);
+  font-size: 2rem;
+  margin: 0 0 0.2rem;
+}
+
+.tarjeta-nota {
+  font-size: 0.92rem;
+  color: var(--tinta-suave);
+  margin: 0;
+}
+
+@media (max-width: 820px) {
+  .tarjetas {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tablas de datos */
+
+.meta-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.98rem;
+}
+
+.meta-table th,
+.meta-table td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.7rem 0.8rem;
+  border-bottom: 1px solid var(--linea);
+}
+
+.meta-table th {
+  width: 190px;
+  font-weight: 400;
+  color: var(--tinta-suave);
+}
+
+@media (max-width: 620px) {
+  .meta-table th {
+    width: auto;
+  }
+
+  .meta-table tr {
+    display: block;
+    padding: 0.5rem 0;
+  }
+
+  .meta-table th,
+  .meta-table td {
+    display: block;
+    border: 0;
+    padding: 0 0.8rem;
+  }
+}
+
+/* Formulario de reserva */
+
+.formulario {
+  max-width: 34rem;
+  margin-top: 1.5rem;
+}
+
+.campo {
+  margin-bottom: 1rem;
+}
+
+.campo label {
+  display: block;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--tinta-suave);
+  margin-bottom: 0.35rem;
+}
+
+.campo input,
+.campo textarea {
+  width: 100%;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid var(--linea);
+  border-radius: 0.4rem;
+  background: var(--blanco);
+  font-family: inherit;
+  font-size: 1rem;
+  color: inherit;
+}
+
+.campo textarea {
+  min-height: 6rem;
+  resize: vertical;
+}
+
+.formulario-nota {
+  font-size: 0.9rem;
+  color: var(--tinta-suave);
+  margin-top: 0.8rem;
+}
+
+/* Prosa */
+
+.prose blockquote {
+  margin: 1.5rem 0;
+  padding-left: 1.1rem;
+  border-left: 3px solid var(--terracota);
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  color: var(--tinta-suave);
+}
+
+.prose ul {
+  padding-left: 1.2rem;
+}
+
+.prose li {
+  margin-bottom: 0.5rem;
+}
+
+/* Pie */
+
+.site-footer {
+  background: var(--blanco);
+  border-top: 1px solid var(--linea);
+  padding: 2.5rem 0;
+  margin-top: 2rem;
+  font-size: 0.95rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.footer-brand {
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}
+
+.footer-title {
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--tinta-suave);
+  margin-bottom: 0.4rem;
+}
+
+.footer-dato,
+.footer-nota {
+  margin-bottom: 0.5rem;
+}
+
+.footer-nota {
+  color: var(--tinta-suave);
+  font-size: 0.9rem;
+}
+
+.footer-lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 820px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,56 @@
+---
+import Base from '../layouts/Base.astro';
+import { whatsappUrl } from '../site';
+import { tarifas, dosNoches, peso } from '../precios';
+---
+
+<Base title="Tarifas" description="Tarifas de Casa El Abrazo y cómo reservar.">
+  <section class="section">
+    <div class="container">
+      <article class="article">
+        <h1>Tarifas</h1>
+
+        <p>
+          La reserva es directa, sin plataformas de intermediación. Se confirma por WhatsApp con el abono de la
+          primera noche.
+        </p>
+
+        <table class="meta-table">
+          <tbody>
+            <tr>
+              <th>Una noche de fin de semana</th>
+              <td>
+                {peso(tarifas.finDeSemana)}<br />
+                Viernes, sábado o domingo.
+              </td>
+            </tr>
+            <tr>
+              <th>Promoción desde dos noches</th>
+              <td>
+                {peso(tarifas.promocionDosNoches)} por noche<br />
+                Dos noches: {peso(dosNoches)}. La promoción aplica a partir de la segunda noche.
+              </td>
+            </tr>
+            <tr>
+              <th>Entre semana</th>
+              <td>
+                {peso(tarifas.entreSemana)} por noche<br />
+                Lunes a jueves, con el 10 % de descuento sobre la tarifa de una noche.
+              </td>
+            </tr>
+            <tr>
+              <th>Capacidad</th>
+              <td>Una pareja con un niño.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          <a class="btn btn-principal" href={whatsappUrl} rel="noopener">Preguntar disponibilidad por WhatsApp</a>
+        </p>
+
+        <p><a href="/reservar/">Ver cómo se reserva</a></p>
+      </article>
+    </div>
+  </section>
+</Base>

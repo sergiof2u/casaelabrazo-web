@@ -1,0 +1,76 @@
+---
+import Base from '../layouts/Base.astro';
+import { site, whatsappUrl, capacidad } from '../site';
+---
+
+<Base title="Reservar" description="Cómo reservar Casa El Abrazo: por WhatsApp, sin plataformas.">
+  <section class="section">
+    <div class="container">
+      <article class="article">
+        <h1>Reservar</h1>
+
+        <p>
+          La reserva se hace por WhatsApp, hablando directamente con nosotros. No usamos plataformas de
+          intermediación: lo que acuerdas aquí es lo que pagas.
+        </p>
+
+        <p>
+          Escríbenos a <a href={whatsappUrl} rel="noopener">{site.whatsappVisible}</a> con las fechas y el número de
+          personas. La casa es para {capacidad}.
+        </p>
+
+        <h2>Deja los datos y seguimos en WhatsApp</h2>
+
+        <form class="formulario" id="form-reserva" data-whatsapp={site.whatsapp}>
+          <div class="campo">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" autocomplete="name" required />
+          </div>
+          <div class="campo">
+            <label for="entrada">Fecha de entrada</label>
+            <input id="entrada" name="entrada" type="date" required />
+          </div>
+          <div class="campo">
+            <label for="salida">Fecha de salida</label>
+            <input id="salida" name="salida" type="date" required />
+          </div>
+          <div class="campo">
+            <label for="personas">Personas</label>
+            <input id="personas" name="personas" type="text" inputmode="numeric" placeholder="2 adultos, 1 niño" required />
+          </div>
+          <div class="campo">
+            <label for="nota">Algo que debamos saber</label>
+            <textarea id="nota" name="nota"></textarea>
+          </div>
+          <button class="btn btn-principal" type="submit">Abrir WhatsApp con estos datos</button>
+          <p class="formulario-nota">
+            Este formulario no guarda nada ni envía nada por su cuenta: arma el mensaje y abre tu WhatsApp con él
+            escrito, para que lo revises y lo mandes tú.
+          </p>
+        </form>
+      </article>
+    </div>
+  </section>
+
+  <script>
+    const formulario = document.getElementById('form-reserva') as HTMLFormElement | null;
+
+    formulario?.addEventListener('submit', (evento: SubmitEvent) => {
+      evento.preventDefault();
+      const datos = new FormData(formulario);
+      const lineas = [
+        'Hola, quiero reservar Casa El Abrazo.',
+        `Nombre: ${datos.get('nombre') ?? ''}`,
+        `Entrada: ${datos.get('entrada') ?? ''}`,
+        `Salida: ${datos.get('salida') ?? ''}`,
+        `Personas: ${datos.get('personas') ?? ''}`,
+      ];
+      const nota = String(datos.get('nota') ?? '').trim();
+      if (nota) lineas.push(`Nota: ${nota}`);
+
+      const numero = formulario.dataset.whatsapp ?? '';
+      const url = `https://wa.me/${numero}?text=${encodeURIComponent(lineas.join('\n'))}`;
+      window.open(url, '_blank', 'noopener');
+    });
+  </script>
+</Base>
