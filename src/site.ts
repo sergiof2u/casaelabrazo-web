@@ -12,6 +12,8 @@ export const site = {
   whatsapp: '573164142904',
   whatsappVisible: '316 414 2904',
   instagram: 'casaelabrazo',
+  // Correo: por ahora el de SUMA. Más adelante habrá uno propio de la cabaña.
+  correo: 'hola@sumaensubachoque.com',
 
   lugar: 'Subachoque, Cundinamarca',
 

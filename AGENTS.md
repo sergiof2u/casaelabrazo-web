@@ -44,6 +44,13 @@ mencionan: nada de "también nos encuentras en Airbnb" ni de precios de platafor
 
 **Nunca la construcción "no es X, sino Y".** Es la regla de estilo más estricta del proyecto.
 
+**Excepción aprobada por Sergio el 2026-09-19:** en `la-casa.md`, la frase "No es una casa de grupos ni de
+fiestas: es un lugar para descansar" se queda tal cual. No se reescribe.
+
+**La reserva entra por WhatsApp y por correo.** El correo es `hola@sumaensubachoque.com`, el de SUMA, y vive en
+`site.correo`. Más adelante habrá uno propio de la cabaña, del tipo `estadia@sumaensubachoque.com`; cuando exista
+se cambia solo esa línea.
+
 **Nada de superlativos de turismo masivo**: "experiencia inolvidable", "paraíso escondido", "desconéctate del
 mundo". El tono es el de los volantes de la marca: calma, sin promesas infladas.
 

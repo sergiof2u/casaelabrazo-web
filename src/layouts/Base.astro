@@ -79,6 +79,7 @@ const currentPath = Astro.url.pathname;
             <p class="footer-title">Reservas</p>
             <p>
               <a href={whatsappUrl} rel="noopener">WhatsApp {site.whatsappVisible}</a><br />
+              <a href={`mailto:${site.correo}`}>{site.correo}</a><br />
               <a href={`https://www.instagram.com/${site.instagram}/`} rel="noopener">@{site.instagram}</a>
             </p>
             <p class="footer-nota">La reserva es directa, sin plataformas de intermediación.</p>
