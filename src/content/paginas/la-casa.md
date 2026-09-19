@@ -1,6 +1,6 @@
 ---
 title: La cabaña
-entrada: Una sola cabaña, en su terreno, con el campo alrededor.
+entrada: Una cabaña en el campo.
 descripcion: Casa El Abrazo, cabaña de fin de semana en Subachoque, para una pareja con un niño.
 imagen: /fotos/la-casa.jpg
 ---
@@ -12,8 +12,8 @@ al frente.
 
 ## Los espacios
 
-**La terraza.** Madera, techo translúcido y la baranda calada en acero. Es donde se pasa el rato
-largo: el café de la mañana y la conversación de la noche.
+**La terraza.** Madera y techo translúcido. Es donde se pasa el rato largo: el café de la mañana y la
+conversación de la noche.
 
 **La sala.** Ventanales grandes a la montaña, una mesa de centro y la estufa de leña para las noches frías.
 
