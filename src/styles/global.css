@@ -90,6 +90,9 @@ a:hover { color: var(--rojo); }
 .header-inner { display: flex; align-items: center; gap: 1.4rem; padding: 0.85rem 0; }
 
 .brand { display: flex; align-items: center; gap: 0.7rem; text-decoration: none; color: inherit; margin-right: auto; }
+.hero-emblema { width: 132px; height: 132px; object-fit: contain; margin: 0 0 1rem -0.35rem; }
+@media (max-width: 720px) { .hero-emblema { width: 104px; height: 104px; } }
+
 .brand-emblema { width: 46px; height: 46px; object-fit: contain; }
 .brand-texto { display: flex; flex-direction: column; }
 .brand-name { font-family: var(--serif); font-size: 1.55rem; letter-spacing: 0.09em; text-transform: uppercase; line-height: 1.1; }
