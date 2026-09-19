@@ -10,10 +10,14 @@ huéspedes que aprovechan el fin de semana para aprender algo con las manos.
 
 ## Taller de joyería
 
+![Una clase en el taller: tres personas trabajando en la mesa mientras la tallerista acompaña](/fotos/experiencia/taller-joyeria.jpg)
+
 Una jornada en el taller, en el banco de trabajo, para conocer el oficio y salir con una pieza propia. Se coordina
 con anticipación y se dicta en el taller de la casa.
 
 ## Yoga y meditación
+
+![Dos personas en la postura del árbol durante una clase](/fotos/experiencia/yoga.jpg)
 
 Clases en el estudio, a unos minutos de la cabaña. Se puede entrar a las clases que ya están programadas o pedir
 una sesión durante la estadía.
