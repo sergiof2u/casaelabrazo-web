@@ -1,6 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
-import { whatsappUrl } from '../site';
+import { site, whatsappUrl } from '../site';
 import { tarifas, dosNoches, peso } from '../precios';
 ---
 
@@ -10,7 +10,8 @@ import { tarifas, dosNoches, peso } from '../precios';
       <p class="etiqueta">Tarifas</p>
       <h1>Noches y precios</h1>
       <p class="entrada">
-        Los precios están a la vista. Se reserva por WhatsApp o por correo, sin plataformas de intermediación.
+        Los precios están a la vista. Reservas por WhatsApp y en el correo
+        <a href={`mailto:${site.correo}`}>{site.correo}</a>.
       </p>
     </div>
   </section>
