@@ -21,6 +21,21 @@ conversación de la noche.
 
 ![El ventanal y la montaña desde la sala](/fotos/ventanal.jpg)
 
+## Características
+
+<table class="meta-table">
+  <tbody>
+    <tr><th>Área</th><td>36 m², cabaña independiente</td></tr>
+    <tr><th>Dormitorio</th><td>Cama doble</td></tr>
+    <tr><th>Sala</th><td>Sofá cama y estufa de leña</td></tr>
+    <tr><th>Cocina</th><td>Completa, con estufa de gas</td></tr>
+    <tr><th>Baño</th><td>Uno completo, con ducha</td></tr>
+    <tr><th>Terraza</th><td>Con vista al jardín</td></tr>
+    <tr><th>Entrada</th><td>2:00 pm</td></tr>
+    <tr><th>Salida</th><td>12:00 m</td></tr>
+  </tbody>
+</table>
+
 ## Para quién es
 
 Para una pareja con un niño. No es una casa de grupos ni de fiestas: es un lugar para descansar.

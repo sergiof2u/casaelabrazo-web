@@ -185,6 +185,11 @@ a:hover { color: var(--rojo); }
 
 /* ---------- galería ---------- */
 
+.meta-table { width: 100%; border-collapse: collapse; margin: 1.6rem 0; font-size: 0.98rem; }
+.meta-table th, .meta-table td { text-align: left; padding: 0.7rem 0.2rem; border-bottom: 1px solid var(--linea); vertical-align: top; }
+.meta-table th { width: 34%; font-weight: 400; color: var(--tinta-suave); font-family: var(--sans); }
+.meta-table tr:last-child th, .meta-table tr:last-child td { border-bottom: 0; }
+
 .galeria { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin: 0; padding: 0; }
 .galeria figure { margin: 0; }
 .galeria img { border-radius: 10px; box-shadow: 0 12px 28px -20px rgba(43, 39, 34, 0.55); }
