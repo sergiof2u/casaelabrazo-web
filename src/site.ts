@@ -6,7 +6,7 @@ export const site = {
   etiqueta: 'Cabaña campestre',
   tagline: 'Cabaña de alquiler de fin de semana en Subachoque',
   descripcion:
-    'Cabaña campestre de alquiler de fin de semana en Subachoque, Cundinamarca. Para una pareja con un niño. La construyó un orfebre, en estructura metálica. Reserva directa por WhatsApp.',
+    'Cabaña campestre de alquiler de fin de semana en Subachoque, Cundinamarca. Para una pareja con un niño. Reserva directa por WhatsApp.',
 
   // Contacto: la reserva es directa, sin plataformas de intermediación.
   whatsapp: '573164142904',
@@ -14,6 +14,10 @@ export const site = {
   instagram: 'casaelabrazo',
 
   lugar: 'Subachoque, Cundinamarca',
+
+  // SUMA, el espacio de Sergio y Alexandra en Subachoque: taller de joyería,
+  // talleres y yoga. Se enlaza desde la sección de quién hizo la casa.
+  suma: 'https://sumaensubachoque.com',
 } as const;
 
 export const whatsappUrl = `https://wa.me/${site.whatsapp}`;

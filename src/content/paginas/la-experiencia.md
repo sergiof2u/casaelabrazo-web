@@ -5,7 +5,7 @@ descripcion: Talleres de joyería, yoga y masaje durante la estadía en Casa El 
 imagen: /fotos/ventanal.jpg
 ---
 
-La cabaña queda cerca del taller donde se trabaja el oficio y del estudio de yoga. Varias veces hemos tenido
+La cabaña queda cerca del taller de joyería y del estudio de yoga. Varias veces hemos tenido
 huéspedes que aprovechan el fin de semana para aprender algo con las manos.
 
 ## Taller de joyería

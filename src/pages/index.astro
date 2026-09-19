@@ -10,9 +10,9 @@ import { tarifas, dosNoches, peso } from '../precios';
       <div>
         <p class="etiqueta">Cabaña campestre · {site.lugar}</p>
         <h1>Casa El Abrazo</h1>
-        <p class="entrada">Un fin de semana en la montaña, en una casa que construyó su dueño.</p>
+        <p class="entrada">Un fin de semana en la montaña, en una cabaña para descansar.</p>
         <p>
-          Estructura metálica soldada pieza por pieza, madera, jardín y vista. Es para {capacidad}. La reserva es
+          Madera, ventanales, jardín y la montaña al frente. Es para {capacidad}. La reserva es
           directa: escribes, te contestamos.
         </p>
         <div class="acciones">
@@ -119,30 +119,6 @@ import { tarifas, dosNoches, peso } from '../precios';
     </div>
   </section>
 
-  <section class="seccion seccion--blanca">
-    <div class="container dos-columnas dos-columnas--invertida">
-      <figure class="columna-foto">
-        <img
-          src="/fotos/el-oficio.jpg"
-          width="748"
-          height="1000"
-          loading="lazy"
-          alt="Sergio soldando la estructura metálica de la cabaña"
-        />
-        <figcaption class="pie-foto">La estructura, soldada pieza por pieza.</figcaption>
-      </figure>
-      <div>
-        <p class="etiqueta">El oficio</p>
-        <h2>La construyó un orfebre</h2>
-        <p>
-          Sergio es orfebre y escultor. Levantó la cabaña en estructura metálica con la misma mano con la que hace las
-          piezas: soldadura fina, medidas al milímetro y una baranda calada que se lee como un encaje.
-        </p>
-        <p>En Subachoque hay varios alquileres de fin de semana. Esta casa la levantó quien la habita, y eso se ve en cada detalle.</p>
-      </div>
-    </div>
-  </section>
-
   <section class="seccion">
     <div class="container">
       <p class="etiqueta">La experiencia</p>
@@ -162,6 +138,29 @@ import { tarifas, dosNoches, peso } from '../precios';
         </div>
       </div>
       <p style="margin-top: 1.5rem"><a href="/la-experiencia/">Ver la experiencia</a></p>
+    </div>
+  </section>
+
+  <section class="seccion seccion--blanca">
+    <div class="container dos-columnas dos-columnas--invertida">
+      <figure class="columna-foto">
+        <img
+          src="/fotos/el-oficio.jpg"
+          width="748"
+          height="1000"
+          loading="lazy"
+          alt="Sergio soldando la estructura metálica de la cabaña"
+        />
+      </figure>
+      <div>
+        <p class="etiqueta">Quién la hizo</p>
+        <h2>Hecha en Subachoque</h2>
+        <p>
+          Sergio levantó la cabaña en estructura metálica. Él y Alexandra tienen en Subachoque a SUMA, un espacio de
+          joyería, talleres y yoga, de donde salen el taller y las clases que puedes sumar a la estadía.
+        </p>
+        <p><a href={site.suma} rel="noopener">Conocer SUMA</a></p>
+      </div>
     </div>
   </section>
 

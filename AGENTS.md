@@ -25,8 +25,10 @@ Es de Sergio y Alexandra.
 **La capacidad es una pareja con un niño.** No se alquila para grupos ni para fiestas, y el texto no debe sugerir
 lo contrario en ningún lado.
 
-**El argumento que encabeza es el oficio:** la misma mano que hace las piezas de joyería levantó la estructura de
-la casa. Es lo que la separa de cualquier otro alquiler de fin de semana en la sabana.
+**El oficio tiene un solo espacio.** Desde el 2026-09-19, por decisión de Sergio, que la casa la haya hecho un
+orfebre deja de encabezar el sitio. Se menciona solo en la sección "Quién la hizo" de la portada, que enlaza a
+SUMA (`site.suma`, https://sumaensubachoque.com). En el resto de páginas no se habla de orfebre, soldadura pieza
+por pieza ni de "la construyó su dueño": se describe la casa.
 
 **A diferencia de la web de SUMA, aquí el fin de semana es el producto**, no una ruta de entrada. En SUMA se
 promociona sin encabezar la identidad; aquí va al frente.
