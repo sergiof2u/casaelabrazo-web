@@ -5,8 +5,8 @@ descripcion: Yoga, talleres de joyería y masaje durante la estadía en Casa El 
 imagen: /fotos/ventanal.jpg
 ---
 
-La cabaña queda cerca de SUMA, el espacio de Sergio y Alexandra en Subachoque, donde están el taller de joyería
-y el estudio de yoga. Varias veces hemos tenido huéspedes que aprovechan el fin de semana para aprender algo con
+La cabaña queda cerca de [SUMA](https://sumaensubachoque.com), el espacio de Sergio y Alexandra en Subachoque,
+donde están el taller de joyería y el estudio de yoga. Varias veces hemos tenido huéspedes que aprovechan el fin de semana para aprender algo con
 las manos.
 
 ## Yoga y meditación
