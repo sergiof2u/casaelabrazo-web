@@ -40,8 +40,6 @@ mencionan: nada de "también nos encuentras en Airbnb" ni de precios de platafor
 
 ## Reglas de redacción
 
-**Los precios van a la vista.** Nunca "consultar por interno" ni "escríbenos para saber el valor".
-
 **Nunca la construcción "no es X, sino Y".** Es la regla de estilo más estricta del proyecto.
 
 **Excepción aprobada por Sergio el 2026-09-19:** en `la-casa.md`, la frase "No es una casa de grupos ni de
