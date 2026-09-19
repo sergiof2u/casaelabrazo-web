@@ -25,7 +25,7 @@ conversación de la noche.
 
 <table class="meta-table">
   <tbody>
-    <tr><th>Área</th><td>36 m², cabaña independiente</td></tr>
+    <tr><th>La cabaña</th><td>Independiente, en su propio terreno</td></tr>
     <tr><th>Dormitorio</th><td>Cama doble</td></tr>
     <tr><th>Sala</th><td>Sofá cama y estufa de leña</td></tr>
     <tr><th>Cocina</th><td>Completa, con estufa de gas</td></tr>
