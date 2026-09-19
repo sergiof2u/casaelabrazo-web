@@ -41,8 +41,11 @@ const currentPath = Astro.url.pathname;
     <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="/">
-          <span class="brand-name">{site.nombre}</span>
-          <span class="brand-tag">{site.etiqueta}</span>
+          <img class="brand-emblema" src="/marca/emblema.png" width="512" height="512" alt="" />
+          <span class="brand-texto">
+            <span class="brand-name">{site.nombre}</span>
+            <span class="brand-tag">{site.etiqueta}</span>
+          </span>
         </a>
         <nav>
           <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false">Menú</button>

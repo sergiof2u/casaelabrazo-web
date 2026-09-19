@@ -15,9 +15,23 @@ al frente.
 **La terraza.** Madera y techo translúcido. Es donde se pasa el rato largo: el café de la mañana y la
 conversación de la noche.
 
-**La sala.** Ventanales grandes a la montaña, una mesa de centro y la estufa de leña para las noches frías.
+![La terraza de madera con la mesa y las sillas](/fotos/cabana/terraza-mesa.jpg)
 
-**La habitación.** La cama está frente al ventanal; se amanece con la montaña y las nubes.
+**La sala.** Ventanales grandes a la montaña, el sofá cama, una mesa de centro y la estufa de leña para las
+noches frías.
+
+![La sala con los ventanales al jardín](/fotos/cabana/sala-ventanales.jpg)
+
+**La habitación.** La cama doble está frente al ventanal; se amanece con la montaña y las nubes.
+
+![La cama doble del dormitorio](/fotos/cabana/cama-doble.jpg)
+
+**La cocina y el baño.** Cocina completa con estufa de gas, y un baño con ducha.
+
+<div class="galeria">
+  <figure><img src="/fotos/cabana/cocina.jpg" alt="La cocina con la estufa de gas" loading="lazy" /></figure>
+  <figure><img src="/fotos/cabana/bano.jpg" alt="El baño con la ducha" loading="lazy" /></figure>
+</div>
 
 ![El ventanal y la montaña desde la sala](/fotos/ventanal.jpg)
 
