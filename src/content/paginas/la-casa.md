@@ -1,5 +1,5 @@
 ---
-title: La casa
+title: La cabaña
 entrada: Una sola cabaña, en su terreno, con el campo alrededor.
 descripcion: Casa El Abrazo, cabaña de fin de semana en Subachoque, para una pareja con un niño.
 imagen: /fotos/la-casa.jpg
